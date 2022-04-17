@@ -1,0 +1,208 @@
+{
+    "asset" : {
+        "generator" : "Khronos glTF Blender I/O v1.8.19",
+        "version" : "2.0"
+    },
+    "scene" : 0,
+    "scenes" : [
+        {
+            "name" : "Scene",
+            "nodes" : [
+                0
+            ]
+        }
+    ],
+    "nodes" : [
+        {
+            "mesh" : 0,
+            "name" : "Plane.002",
+            "rotation" : [
+                0.70710688829422,
+                0,
+                0,
+                0.7071067094802856
+            ],
+            "scale" : [
+                0.30907943844795227,
+                0.30907943844795227,
+                0.3643548786640167
+            ],
+            "translation" : [
+                -4.723762512207031,
+                0.3232821822166443,
+                0.9663820266723633
+            ]
+        }
+    ],
+    "materials" : [
+        {
+            "doubleSided" : true,
+            "name" : "Material.001",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    0.9839524626731873,
+                    0.9183824062347412,
+                    1,
+                    1
+                ],
+                "metallicFactor" : 0.20454543828964233
+            }
+        },
+        {
+            "doubleSided" : true,
+            "name" : "Material.002",
+            "pbrMetallicRoughness" : {
+                "baseColorFactor" : [
+                    1,
+                    0.8348850607872009,
+                    0.7671606540679932,
+                    1
+                ],
+                "metallicFactor" : 0
+            }
+        }
+    ],
+    "meshes" : [
+        {
+            "name" : "Plane.002",
+            "primitives" : [
+                {
+                    "attributes" : {
+                        "POSITION" : 0,
+                        "NORMAL" : 1,
+                        "TEXCOORD_0" : 2
+                    },
+                    "indices" : 3,
+                    "material" : 0
+                },
+                {
+                    "attributes" : {
+                        "POSITION" : 4,
+                        "NORMAL" : 5,
+                        "TEXCOORD_0" : 6
+                    },
+                    "indices" : 7,
+                    "material" : 1
+                }
+            ]
+        }
+    ],
+    "accessors" : [
+        {
+            "bufferView" : 0,
+            "componentType" : 5126,
+            "count" : 8279,
+            "max" : [
+                40.69184875488281,
+                6.088136672973633,
+                2.5276103019714355
+            ],
+            "min" : [
+                -10.12519359588623,
+                -12.343602180480957,
+                -0.3374236226081848
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 1,
+            "componentType" : 5126,
+            "count" : 8279,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 2,
+            "componentType" : 5126,
+            "count" : 8279,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 3,
+            "componentType" : 5123,
+            "count" : 18978,
+            "type" : "SCALAR"
+        },
+        {
+            "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 12816,
+            "max" : [
+                39.35969924926758,
+                4.837589263916016,
+                0.7697473764419556
+            ],
+            "min" : [
+                -8.761052131652832,
+                -11.0083646774292,
+                -1.2919111251831055
+            ],
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 5,
+            "componentType" : 5126,
+            "count" : 12816,
+            "type" : "VEC3"
+        },
+        {
+            "bufferView" : 6,
+            "componentType" : 5126,
+            "count" : 12816,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 7,
+            "componentType" : 5123,
+            "count" : 38088,
+            "type" : "SCALAR"
+        }
+    ],
+    "bufferViews" : [
+        {
+            "buffer" : 0,
+            "byteLength" : 99348,
+            "byteOffset" : 0
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 99348,
+            "byteOffset" : 99348
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 66232,
+            "byteOffset" : 198696
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 37956,
+            "byteOffset" : 264928
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 153792,
+            "byteOffset" : 302884
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 153792,
+            "byteOffset" : 456676
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 102528,
+            "byteOffset" : 610468
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 76176,
+            "byteOffset" : 712996
+        }
+    ],
+    "buffers" : [
+        {
+            "byteLength" : 789172,
+            "uri" : "my_keyboard_postjoin.bin"
+        }
+    ]
+}
