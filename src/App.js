@@ -21,7 +21,7 @@ function App() {
       <nav>
         <h1>no.1</h1>
       </nav>
-      <Canvas shadows camera={{ position: [-20, 15, 25], fov: 70}}>
+      <Canvas onClick={console.log('hello')} shadows camera={{ position: [-20, 15, 25], fov: 70}}>
         <directionalLight intensity={1} position={[0, 10, -5]}
           shadow-mapSize-width={1024}
           shadow-mapSize-height={1024}
