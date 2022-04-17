@@ -4,7 +4,6 @@ import { softShadows, OrbitControls, useGLTF } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { BsMouse2 } from 'react-icons/bs'
 
-
 softShadows()
 
 function Model() {
@@ -13,16 +12,6 @@ function Model() {
 }
 
 function App() {
-
-  const [camPos, setCamPos] = useState([0, 0, 25])
-
-  useEffect(() => {
-    setTimeout(() => {
-      setCamPos([-5, 10, 20])
-    }, 1200)
-  }, [])
-
-  console.log(camPos)
 
   return (
     <>
@@ -33,29 +22,32 @@ function App() {
       <nav>
         <h1>no.1</h1>
       </nav>
-      <Canvas shadows camera={{ position: camPos, fov: 70}}>
+      <Canvas shadows camera={{ position: [-20, 15, 25], fov: 70}}>
         <directionalLight intensity={1} position={[0, 10, -5]}
           shadow-mapSize-width={1024}
           shadow-mapSize-height={1024}
-          shadow-camera-far={50}
+          shadow-camera-far={20}
           shadow-camera-left={-10}
           shadow-camera-right={10}
           shadow-camera-top={10}
           shadow-camera-bottom={-10}
           castShadow
         />
-        <ambientLight intensity={0.5}/>
-        {/* <pointLight intensity={0.4} position={[0, 5, 0]}/> */}
+        <ambientLight intensity={0.4}/>
+        <pointLight intensity={0.2} position={[0, -5, 0]}/>
         {/* <pointLight intensity={0.4} position={[-5, 0, 0]}/>
         <pointLight intensity={0.4} position={[0, 0, 2]}/>
         <pointLight intensity={0.2} position={[0, 0, -3]}/> */}
         <group>
-          <mesh receiveShadow position={[0, -10, 0]} rotation={[-Math.PI / 2, 0, 0]}>
+          <mesh receiveShadow position={[0, -1, 0]} rotation={[-Math.PI / 2, 0, 0]}>
             <planeBufferGeometry attach='geometry' args={[100, 100]}/>
-            <shadowMaterial attach='material' opacity={1}/>
+            <shadowMaterial attach='material' opacity={0.2}/>
+          </mesh>
+          <mesh castShadow position={[0, -0.3, 0.14]} rotation={[-Math.PI / 2, 0, 0]}>
+            <boxGeometry  attach='geometry' args={[15, 5, 0.1]}/>
           </mesh>
           <mesh position={[0, 0, 0]}>
-              <Model castShadow />
+              <Model  />
           </mesh>
         </group>
         <OrbitControls/>
