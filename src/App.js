@@ -1,5 +1,4 @@
 import './App.css';
-import React, { useEffect, useState} from 'react';
 import { softShadows, OrbitControls, useGLTF } from '@react-three/drei'
 import { Canvas } from '@react-three/fiber'
 import { BsMouse2 } from 'react-icons/bs'
