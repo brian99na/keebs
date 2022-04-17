@@ -1,38 +1,88 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Space Mono', monospace;
+  font-size: 30px;
+  font-weight: 100;
+  color: rgb(0, 0, 0); 
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body, html, #root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  background-color: rgb(255, 255, 255);
+  position: relative;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
+  width: 100vw;
+  position: absolute;
   display: flex;
-  flex-direction: column;
-  align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  align-items: flex-start;
+  background-color: transparent;
+  height: 100vh;
 }
 
-.App-link {
-  color: #61dafb;
+.message {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+  width: fit-content;
+  aspect-ratio: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  animation: appear 5s ease;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.message h1 {
+  font-size: 15px;
+  width: fit-content;
+}
+
+.icon {
+  font-size: 30px;
+}
+
+nav, #root {
+  animation: appear 5s ease;
+}
+
+nav h1 {
+  margin: 10vh 0;
+  z-index: 1;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+nav h1:hover{
+  animation: blink 0.5s infinite ease;
+}
+
+
+
+@keyframes blink {
+  100%, 0% {
+    opacity: 100%;
   }
-  to {
-    transform: rotate(360deg);
+  50% {
+    opacity: 20%;
+  }
+}
+
+@keyframes appear {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
   }
 }
