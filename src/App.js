@@ -1,6 +1,6 @@
 import "./App.css";
 import { Suspense } from "react";
-import { softShadows, OrbitControls } from "@react-three/drei";
+import { softShadows, OrbitControls, Loader } from "@react-three/drei";
 import { Canvas } from "@react-three/fiber";
 import { BsMouse2 } from "react-icons/bs";
 import Lights from "./components/lights";
@@ -30,6 +30,7 @@ function App() {
         </Suspense>
         <OrbitControls />
       </Canvas>
+      <Loader />
     </>
   );
 }
