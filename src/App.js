@@ -28,7 +28,7 @@ function App() {
           <Model />
           <Floor />
         </Suspense>
-        <OrbitControls />
+        <OrbitControls minPolarAngle={0-Math.PI/2} maxPolarAngle={0+Math.PI/2}/>
       </Canvas>
       <Loader />
     </>

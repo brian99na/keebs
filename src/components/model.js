@@ -36,10 +36,10 @@ function Model() {
     } 
 
     const spreadAnimation = useSpring({
-      capPosition: spread ? [0, 3, -2] : [0, 0, 0],
-      topPosition: spread ? [0, 2.25, -1] : [0, 0, 0],
-      platePosition: spread ? [0, 1.5, 0] : [0, 0, 0],
-      botPosition: spread ? [0, 0.75, 2] : [0, 0, 0],
+      capPosition: spread ? [0, 9, -5] : [0, 0, 0],
+      topPosition: spread ? [0, 6, -2] : [0, 0, 0],
+      platePosition: spread ? [0, 3, 1] : [0, 0, 0],
+      botPosition: spread ? [0, 0, 4] : [0, 0, 0],
       plateRotation: spread ? [0.2, 0, 0] : [0, 0, 0]
     })
 
