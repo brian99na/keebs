@@ -1,6 +1,4 @@
-import { SpotLight } from '@react-three/drei'
 import React from 'react'
-import { DirectionalLight } from 'three'
 
 function lights() {
   return (

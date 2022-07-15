@@ -4,7 +4,6 @@ import { BsArrowLeftShort, BsArrowRightShort} from 'react-icons/bs'
 import dummyData from '../dummy.json'
 
 function Nav(props) {
-
   const [opacity, setOpacity] = useState(false)
 
   console.log(dummyData)
