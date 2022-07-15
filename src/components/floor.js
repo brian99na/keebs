@@ -1,4 +1,5 @@
 import React from 'react'
+import { CircleBufferGeometry } from 'three'
 
 function floor() {
   return (

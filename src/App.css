@@ -10,79 +10,17 @@
   color: rgb(0, 0, 0); 
 }
 
-body, html, #root {
+body, html, #root, .App {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
-  background-color: rgb(255, 255, 255);
   position: relative;
 }
 
-nav {
-  width: 100vw;
-  position: absolute;
+.App {
   display: flex;
-  justify-content: center;
-  align-items: flex-start;
-  background-color: transparent;
-  height: 100vh;
-}
-
-.message {
-  position: absolute;
-  top: 20%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  z-index: 1;
-  width: fit-content;
-  aspect-ratio: 1;
-  display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
-  gap: 20px;
-  animation: appear 5s ease;
-}
-
-.message h1 {
-  font-size: 15px;
-  width: fit-content;
-}
-
-.icon {
-  font-size: 30px;
-}
-
-nav, #root {
-  animation: appear 5s ease;
-}
-
-nav h1 {
-  margin: 10vh 0;
-  z-index: 1;
-  cursor: pointer;
-  transition: 0.4s ease;
-}
-
-nav h1:hover{
-  animation: blink 0.5s infinite ease;
-}
-
-
-
-@keyframes blink {
-  100%, 0% {
-    opacity: 100%;
-  }
-  50% {
-    opacity: 20%;
-  }
-}
-
-@keyframes appear {
-  0% {
-    opacity: 0%;
-  }
-  100% {
-    opacity: 100%;
-  }
+  background-color: rgb(238, 238, 238);
 }

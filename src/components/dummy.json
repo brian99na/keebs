@@ -1,0 +1,22 @@
+{
+    "text": [
+        {
+            "navbar": "home_page"
+        },
+        {
+            "navbar": "the_keycaps",
+            "blurb": "our premium keycaps",
+            "textField": "Double shot PBT Keycaps with resistant shine that lasts for years. Crafted by our engineers to provide grip while maintaining mobility. Increased thickness to improve sound quality."
+        },
+        {
+            "navbar": "the_plate",
+            "blurb": "our laser cut plating",
+            "textField": "Available in copper, aluminum, or steel, our plates offer a precise laser cut finish with a carbon infused plate to offer both stability and rigidness."
+        },
+        {
+            "navbar": "the_base",
+            "blurb": "our polished marble casing",
+            "textField": "Crafted with care, we offer a chiseled polished marble material that sets us apart from competitors. It is cool to the touch, and offers a thocky sound in a light package"
+        }
+    ]
+}

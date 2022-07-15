@@ -1,4 +1,6 @@
+import { SpotLight } from '@react-three/drei'
 import React from 'react'
+import { DirectionalLight } from 'three'
 
 function lights() {
   return (
@@ -16,7 +18,7 @@ function lights() {
         <ambientLight intensity={0.6}/>
         <pointLight intensity={1} position={[0, 5, -2]}/>
         <pointLight intensity={1} position={[2, 5, -2]}/>
-        <pointLight intensity={1} position={[-2, 5, -2]}/>
+        <pointLight intensity={1} position={[8, 5, -4]}/>
         <pointLight intensity={1} position={[0, 13, -7]}/>
         <pointLight intensity={1} position={[2, 13, -7]}/>
         <pointLight intensity={1} position={[-2, 13, -7]}/>
