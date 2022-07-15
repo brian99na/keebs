@@ -1,7 +1,8 @@
 nav {
     position: absolute;
     top: 5%;
-    width: 100%;
+    max-width: 90%;
+    width: 1000px;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -11,19 +12,22 @@ nav {
 
 .currTitle {
     margin: 0 0 10px 0;
-    width: 90%;
+    max-width: 90%;
+    width: 1000px;
     transition: 0.5s ease;
 }
 
 .line {
-    width: 90%;
+    max-width: 90%;
+    width: 1000px;
     height: 2px;
     background-color: black;
 }
 
 .text {
     margin: 10px 0 0 0;
-    width: 90%;
+    max-width: 90%;
+    width: 1000px;
     display: flex;
     justify-content: space-between;
 }
