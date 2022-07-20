@@ -1,7 +1,6 @@
 import { Suspense } from "react";
-import { softShadows, Loader, OrbitControls, Bounds, PerspectiveCamera } from "@react-three/drei";
+import { softShadows, Loader, OrbitControls, PerspectiveCamera } from "@react-three/drei";
 import { Canvas, useFrame } from "@react-three/fiber";
-import { DepthOfField, EffectComposer } from "@react-three/postprocessing"
 import Lights from "../lights";
 import Model from '../model'
 import Floor from '../floor';
@@ -40,13 +39,6 @@ function Main(props) {
             <Model/>
             <Floor />
           </a.group>
-          <EffectComposer>
-            <DepthOfField
-              focusDistance={50} // where to focus
-              focalLength={0.02} // focal length
-              bokehScale={0} // bokeh size
-            />
-          </EffectComposer>
         </Suspense>
         <OrbitControls enablePan={false} enableRotate={false} target={[0, 0, 0]}/>
         <Dolly />
