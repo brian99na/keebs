@@ -22,14 +22,14 @@ function Nav(props) {
 
   return (
     <nav>
-      <h4 className={`currTitle ${opacity && 'opacity'}`}>{dummyData.text[props.page].navbar}</h4>
+      <h4 className={`currTitle ${opacity && 'opacity'}`}>{props.page >= 0  ? dummyData.text[props.page].navbar : "home_page"}</h4>
       <div className='line'></div>
       <div className='text'>
         <div className='left'>
           {props.page > 0 && 
             <div className={`iconTextLeft ${opacity && 'opacity'}`}>
               <BsArrowLeftShort className='navIcon' name="left" onClick={handleArrowClick}/>
-              <h4>{dummyData.text[props.page - 1].navbar}</h4>
+              <h4>{props.page >= 0 && dummyData.text[props.page - 1].navbar}</h4>
             </div>
           }
         </div>
@@ -37,7 +37,7 @@ function Nav(props) {
           {props.page < 3 &&
           <div className={`iconTextRight ${opacity && 'opacity'}`}>
             <BsArrowRightShort className='navIcon' name="right" onClick={handleArrowClick}/>
-            <h4>{dummyData.text[props.page + 1].navbar}</h4>
+            <h4>{props.page >= 0 ? dummyData.text[props.page + 1].navbar : "the_keycaps"}</h4>
           </div>
           }
         </div>

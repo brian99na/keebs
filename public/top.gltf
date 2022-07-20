@@ -1,6 +1,6 @@
 {
     "asset" : {
-        "generator" : "Khronos glTF Blender I/O v3.2.40",
+        "generator" : "Khronos glTF Blender I/O v3.2.43",
         "version" : "2.0"
     },
     "scene" : 0,
@@ -26,22 +26,21 @@
     "materials" : [
         {
             "doubleSided" : true,
-            "name" : "Marble.002",
+            "name" : "White Powder Coating Texture",
             "normalTexture" : {
                 "index" : 0,
-                "scale" : 0,
-                "texCoord" : 1
+                "scale" : 0.10000000149011612,
+                "texCoord" : 2
             },
             "pbrMetallicRoughness" : {
-                "baseColorTexture" : {
-                    "index" : 1,
-                    "texCoord" : 1
-                },
+                "baseColorFactor" : [
+                    0.5112244486808777,
+                    0.47385525703430176,
+                    0.5016862750053406,
+                    1
+                ],
                 "metallicFactor" : 0,
-                "metallicRoughnessTexture" : {
-                    "index" : 2,
-                    "texCoord" : 1
-                }
+                "roughnessFactor" : 0
             }
         }
     ],
@@ -54,9 +53,10 @@
                         "POSITION" : 0,
                         "NORMAL" : 1,
                         "TEXCOORD_0" : 2,
-                        "TEXCOORD_1" : 3
+                        "TEXCOORD_1" : 3,
+                        "TEXCOORD_2" : 4
                     },
-                    "indices" : 4,
+                    "indices" : 5,
                     "material" : 0
                 }
             ]
@@ -66,38 +66,20 @@
         {
             "sampler" : 0,
             "source" : 0
-        },
-        {
-            "sampler" : 0,
-            "source" : 1
-        },
-        {
-            "sampler" : 0,
-            "source" : 2
         }
     ],
     "images" : [
         {
             "mimeType" : "image/png",
-            "name" : "marble_1_Normal.bmp",
-            "uri" : "textures/marble_1_Normal_bmp.png"
-        },
-        {
-            "mimeType" : "image/png",
-            "name" : "marble_1_color.bmp",
-            "uri" : "textures/marble_1_color_bmp.png"
-        },
-        {
-            "mimeType" : "image/png",
-            "name" : "marble_1_roughness.bmp",
-            "uri" : "textures/marble_1_roughness_bmp.png"
+            "name" : "Normal",
+            "uri" : "textures/Normal.png"
         }
     ],
     "accessors" : [
         {
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 8194,
+            "count" : 13131,
             "max" : [
                 7.850869655609131,
                 0.6807299256324768,
@@ -113,23 +95,29 @@
         {
             "bufferView" : 1,
             "componentType" : 5126,
-            "count" : 8194,
+            "count" : 13131,
             "type" : "VEC3"
         },
         {
             "bufferView" : 2,
             "componentType" : 5126,
-            "count" : 8194,
+            "count" : 13131,
             "type" : "VEC2"
         },
         {
             "bufferView" : 3,
             "componentType" : 5126,
-            "count" : 8194,
+            "count" : 13131,
             "type" : "VEC2"
         },
         {
             "bufferView" : 4,
+            "componentType" : 5126,
+            "count" : 13131,
+            "type" : "VEC2"
+        },
+        {
+            "bufferView" : 5,
             "componentType" : 5123,
             "count" : 16536,
             "type" : "SCALAR"
@@ -138,28 +126,33 @@
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 98328,
+            "byteLength" : 157572,
             "byteOffset" : 0
         },
         {
             "buffer" : 0,
-            "byteLength" : 98328,
-            "byteOffset" : 98328
+            "byteLength" : 157572,
+            "byteOffset" : 157572
         },
         {
             "buffer" : 0,
-            "byteLength" : 65552,
-            "byteOffset" : 196656
+            "byteLength" : 105048,
+            "byteOffset" : 315144
         },
         {
             "buffer" : 0,
-            "byteLength" : 65552,
-            "byteOffset" : 262208
+            "byteLength" : 105048,
+            "byteOffset" : 420192
+        },
+        {
+            "buffer" : 0,
+            "byteLength" : 105048,
+            "byteOffset" : 525240
         },
         {
             "buffer" : 0,
             "byteLength" : 33072,
-            "byteOffset" : 327760
+            "byteOffset" : 630288
         }
     ],
     "samplers" : [
@@ -170,7 +163,7 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 360832,
+            "byteLength" : 663360,
             "uri" : "top.bin"
         }
     ]

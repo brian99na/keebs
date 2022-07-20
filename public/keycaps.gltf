@@ -42,8 +42,8 @@
                 "baseColorTexture" : {
                     "index" : 0
                 },
-                "metallicFactor" : 0.04090911149978638,
-                "roughnessFactor" : 0.5
+                "metallicFactor" : 0,
+                "roughnessFactor" : 0.7090908885002136
             }
         },
         {
@@ -95,15 +95,15 @@
     "images" : [
         {
             "mimeType" : "image/png",
-            "name" : "newKeyboardAlpha_00000",
-            "uri" : "textures/newKeyboardAlpha_00000.png"
+            "name" : "finalKeyboardOutline_00000",
+            "uri" : "textures/finalKeyboardOutline_00000.png"
         }
     ],
     "accessors" : [
         {
             "bufferView" : 0,
             "componentType" : 5126,
-            "count" : 4382,
+            "count" : 4406,
             "max" : [
                 38.89385223388672,
                 4.3039093017578125,
@@ -119,13 +119,13 @@
         {
             "bufferView" : 1,
             "componentType" : 5126,
-            "count" : 4382,
+            "count" : 4406,
             "type" : "VEC3"
         },
         {
             "bufferView" : 2,
             "componentType" : 5126,
-            "count" : 4382,
+            "count" : 4406,
             "type" : "VEC2"
         },
         {
@@ -172,43 +172,43 @@
     "bufferViews" : [
         {
             "buffer" : 0,
-            "byteLength" : 52584,
+            "byteLength" : 52872,
             "byteOffset" : 0
         },
         {
             "buffer" : 0,
-            "byteLength" : 52584,
-            "byteOffset" : 52584
+            "byteLength" : 52872,
+            "byteOffset" : 52872
         },
         {
             "buffer" : 0,
-            "byteLength" : 35056,
-            "byteOffset" : 105168
+            "byteLength" : 35248,
+            "byteOffset" : 105744
         },
         {
             "buffer" : 0,
             "byteLength" : 24912,
-            "byteOffset" : 140224
+            "byteOffset" : 140992
         },
         {
             "buffer" : 0,
             "byteLength" : 223968,
-            "byteOffset" : 165136
+            "byteOffset" : 165904
         },
         {
             "buffer" : 0,
             "byteLength" : 223968,
-            "byteOffset" : 389104
+            "byteOffset" : 389872
         },
         {
             "buffer" : 0,
             "byteLength" : 149312,
-            "byteOffset" : 613072
+            "byteOffset" : 613840
         },
         {
             "buffer" : 0,
             "byteLength" : 76176,
-            "byteOffset" : 762384
+            "byteOffset" : 763152
         }
     ],
     "samplers" : [
@@ -219,7 +219,7 @@
     ],
     "buffers" : [
         {
-            "byteLength" : 838560,
+            "byteLength" : 839328,
             "uri" : "keycaps.bin"
         }
     ]
